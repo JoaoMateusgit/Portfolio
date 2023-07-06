@@ -41,14 +41,14 @@
         <img class="caraImg" src="images/cara trabalhando.jpg" width="600px">
     </section>
     <script>
-        import("./module.js")
-  .then(module => {
-    // utilize o module aqui
-  })
-  .catch(err => {
-    // tratamento de erro
-  });
-  
+        const express = require("express");
+const path = require("path");
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.listen(3000);
     </script>
 </body>
 </html>
