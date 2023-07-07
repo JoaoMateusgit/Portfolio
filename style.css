@@ -28,7 +28,7 @@ section{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    height:100vh;
+    height:90vh;
     min-height: 320px;
 }
 section p1{
@@ -37,6 +37,7 @@ section p1{
     font-size: clamp(1em, 1em + 1vw, 1.4em);
     line-height:38px;
     min-width: 280px;
+    min-height: 20px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px 100px 100px 100px;
@@ -77,6 +78,7 @@ button{
     height:40px;
     margin-left: 20px;
 }
+
 button:hover{
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
@@ -90,6 +92,9 @@ button:hover{
     align-items:flex-start;
     margin-left: 20px;
     
+}
+.acessar{
+    text-decoration: none;
 }
 .botoeslink a{
     margin-left: 10px;
@@ -217,9 +222,15 @@ section p1{
         margin-bottom: 50px;
    }
 }
+section {
+    @media screen and (max-width:320px){
+        height: 100vh;
+   }
+}
 section p1{
     @media screen and (max-height:428px){
         margin-top: 45px;
+        animation: none;
    }
 }
 button{
@@ -230,15 +241,20 @@ button{
 button{
     @media screen and (max-width:320px){
         min-width: 170px;
-        margin-left: 60px;
    }
 }
 button{
     @media screen and (max-width:428px){
         min-width: 200px;
         height: 40px;
-        margin-left: 46px;}
 }
+}
+.acessar{
+    @media screen and (max-width:428px){
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+}}
 .botoesdiv{
     @media screen and (max-height:428px){
         display:flex ;
@@ -248,11 +264,11 @@ button{
     }
 }
 .botoeslink {
-    @media screen and (max-width:320px){
+    @media screen and (max-width:428px){
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 50px;
+        margin-right: 20px;
     }
 }
 .botoeslink {
@@ -260,7 +276,6 @@ button{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 46px;
     }
 }
 .home,.Sobremim,.formacao,.portfolio,.ctt{
