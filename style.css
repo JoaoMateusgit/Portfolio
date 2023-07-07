@@ -36,7 +36,7 @@ section p1{
     max-width: 675px;
     font-size: clamp(1em, 1em + 1vw, 1.4em);
     line-height:38px;
-    min-width: 320px;
+    min-width: 280px;
     background: rgba( 255, 255, 255, 0.35 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px 100px 100px 100px;
@@ -214,6 +214,7 @@ nav{
 section p1{
     @media screen and (min-width:320px){
         margin-right: 15px;
+        margin-bottom: 50px;
    }
 }
 section p1{
