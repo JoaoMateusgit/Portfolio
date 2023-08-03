@@ -74,6 +74,7 @@ section{
     justify-content: center;
     align-items: center;
 }
+
 p:hover{
     transform: scale(1.02);
     transition: 0.5s;
@@ -102,17 +103,25 @@ p{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
-
+    transition: 0.2s ease-in-out;
 }
 .hardSkils{
-    display:block;
     margin: 0 auto;
 }
 .htmlLogo{
-    display:block;
     margin: 0 auto;
     margin-bottom: 10px;
 }
+.skills{
+    margin: 0 auto;
+    display: flex;
+    @media screen and (max-width:428px){
+        width: 300px;
+        overflow-x: auto;
+   }
+}
+
+
 /* Respndividades do Site (nav) */
 body{
     @media screen and (max-width:428px){
@@ -152,6 +161,7 @@ p:hover{
 .home,.Sobremim,.formacao,.portfolio,.ctt{
     padding:3px;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 .home,.Sobremim,.formacao,.portfolio,.ctt{
     @media screen and (min-width:413px){

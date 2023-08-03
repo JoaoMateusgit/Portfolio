@@ -216,6 +216,7 @@ nav a:hover{
 .home,.Sobremim,.formacao,.portfolio,.ctt{
     padding:3px;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 
 .home,.Sobremim,.formacao,.portfolio,.ctt{

@@ -77,6 +77,7 @@ button{
     max-width: 290px;
     height:40px;
     margin-left: 20px;
+    transition: 0.2s ease-in-out;
 }
 
 button:hover{
@@ -91,15 +92,16 @@ button:hover{
     justify-content: start;
     align-items:flex-start;
     margin-left: 20px;
-    
 }
 .acessar{
     text-decoration: none;
+    transition: 0.2s ease-in-out;
 }
 .botoeslink a{
     margin-left: 10px;
     display: flex;
     border-radius: 100px;
+    transition: 0.2s ease-in-out;
 }
 .whats :hover{
     transform: scale(1.2);
@@ -281,6 +283,7 @@ button{
 .home,.Sobremim,.formacao,.portfolio,.ctt{
     padding:3px;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 .home,.Sobremim,.formacao,.portfolio,.ctt{
     @media screen and (min-width:413px){
