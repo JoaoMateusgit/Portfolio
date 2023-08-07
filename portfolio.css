@@ -37,6 +37,7 @@ section{
     @media screen and (max-height:428px){
         height: 68vh;
         }
+        
 }
 .overflow{
     display: flex;
@@ -54,16 +55,22 @@ section{
     height: 90vh;
     }
 }
+.overflow{
+    @media screen and (max-width:834px){
+        width: 100vw;
+
+        }
+}
 .imgs img{
     transition: 0.5s ease ;
     position: absolute;
     box-shadow: -34px 40px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius:  0px 25px 25px 25px;
-    @media screen and (max-width:428px){
-        width: 250px;
-        height: 250px;
-        }
         @media screen and (max-height:428px){
+            width: 200px;
+            height: 200px;
+        }
+        @media screen and (max-width:834px){
             width: 200px;
             height: 200px;
             }
@@ -72,18 +79,16 @@ section{
 #img{
     animation: move 1.2s ease-in-out;
     animation-delay: -0.5s;
+    padding: 15px;
     @media screen and (max-width:428px){
         position: relative;
         margin-bottom: 25px;
         }
-        @media screen and (max-height:428px){
-            padding: 10px;
-            }
-
 }
 #img2{
     animation: move 1.2s ease-in-out;
     animation-delay: -0.25s;
+    padding: 15px;
     @media screen and (max-width:428px){
         position: relative;
         margin-bottom: 25px;
@@ -93,6 +98,7 @@ section{
 #img3{
     animation: move 1.2s ease-in-out;
     animation-delay: 0s ;
+    padding: 15px;
     @media screen and (max-width:428px){
         position: relative;
         margin-bottom: 25px;
@@ -133,9 +139,9 @@ section{
     color: aliceblue;
     text-align: center;
     border-radius:  0px 25px 25px 25px;
-    @media screen and (max-width:428px){
-        width: 250px;
-        height: 250px;
+    @media screen and (max-width:834px){
+        width: 200px;
+        height: 200px;
         }
         @media screen and (max-height:428px){
             width: 200px;
@@ -146,9 +152,9 @@ section{
 .content:hover{
     opacity: 0.8;
     transition:  0.3s ease-in-out;
-    @media screen and (max-width:428px){
-        width: 250px;
-        height: 250px;
+    @media screen and (max-width:834px){
+        width: 200px;
+        height: 200px;
         }
 }
 .btn{
