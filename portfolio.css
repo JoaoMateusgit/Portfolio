@@ -1,4 +1,6 @@
-
+*{
+    border: 2px green solid;
+}
 body{
     min-height: 100vh; 
     overflow: hidden;
@@ -15,8 +17,8 @@ h1{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-nav{
-    display: flex;
+nav{ 
+    display: flex ; 
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -34,9 +36,6 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    @media screen and (max-width:428px){
-        overflow-x:auto ;
-    }
 }
 .overflow{
     display: flex;
@@ -44,9 +43,10 @@ section{
     align-items: center;
     width: 1300px;
     @media screen and (max-width:428px){
-    height: 100%;
     margin: 0;
-    overflow: auto;
+    display: grid;
+    overflow-y: auto;
+    height: 87vh;
     }
 }
 .imgs img{
@@ -54,19 +54,36 @@ section{
     position: absolute;
     box-shadow: -34px 40px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius:  0px 25px 25px 25px;
+    @media screen and (max-width:428px){
+        width: 250px;
+        height: 250px;
+        }
 }
  
 #img{
     animation: move 1.2s ease-in-out;
     animation-delay: -0.5s;
+    @media screen and (max-width:428px){
+        position: relative;
+        margin-bottom: 25px;
+        }
 }
 #img2{
     animation: move 1.2s ease-in-out;
     animation-delay: -0.25s;
+    @media screen and (max-width:428px){
+        position: relative;
+        margin-bottom: 25px;
+        }
 }
 #img3{
     animation: move 1.2s ease-in-out;
     animation-delay: 0s ;
+    @media screen and (max-width:428px){
+        position: relative;
+        margin-bottom: 25px;
+        }
+    
 }
 @keyframes move {
     0% {
@@ -102,12 +119,19 @@ section{
     color: aliceblue;
     text-align: center;
     border-radius:  0px 25px 25px 25px;
+    @media screen and (max-width:428px){
+        width: 250px;
+        height: 250px;
+        }
     
 }
 .content:hover{
     opacity: 0.8;
     transition:  0.3s ease-in-out;
-    
+    @media screen and (max-width:428px){
+        width: 250px;
+        height: 250px;
+        }
 }
 .btn{
     border-radius: 0px 100px 100px 100px;
