@@ -34,6 +34,9 @@ section{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @media screen and (max-height:428px){
+        height: 68vh;
+        }
 }
 .overflow{
     display: flex;
@@ -46,6 +49,10 @@ section{
     overflow-y: auto;
     height: 87vh;
     }
+    @media screen and (max-height:428px){
+    overflow-x: auto;
+    height: 90vh;
+    }
 }
 .imgs img{
     transition: 0.5s ease ;
@@ -56,6 +63,10 @@ section{
         width: 250px;
         height: 250px;
         }
+        @media screen and (max-height:428px){
+            width: 200px;
+            height: 200px;
+            }
 }
  
 #img{
@@ -65,6 +76,10 @@ section{
         position: relative;
         margin-bottom: 25px;
         }
+        @media screen and (max-height:428px){
+            padding: 10px;
+            }
+
 }
 #img2{
     animation: move 1.2s ease-in-out;
@@ -73,6 +88,7 @@ section{
         position: relative;
         margin-bottom: 25px;
         }
+
 }
 #img3{
     animation: move 1.2s ease-in-out;
@@ -81,7 +97,7 @@ section{
         position: relative;
         margin-bottom: 25px;
         }
-    
+
 }
 @keyframes move {
     0% {
@@ -121,7 +137,11 @@ section{
         width: 250px;
         height: 250px;
         }
-    
+        @media screen and (max-height:428px){
+            width: 200px;
+            height: 200px;
+            }
+
 }
 .content:hover{
     opacity: 0.8;
