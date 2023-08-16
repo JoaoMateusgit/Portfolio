@@ -163,7 +163,7 @@ section{
     width: 100px;
     background-color: rgb(255, 255, 255);
     border-radius: 100px 0px 100px 100px;
-    margin-bottom: 15px;
+    margin-bottom: 1px;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 100px 0px 100px 100px;
     border: 1px  solid rgba( 255, 255, 255, 0.18 );
@@ -213,6 +213,24 @@ section{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.acessar button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px 0px 100px 100px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 100px 0px 100px 100px;
+    border: 1px  solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
+    min-width:170px ;
+    max-width: 290px;
+    height:40px;
+    margin-left: 20px;
+    transition: 0.2s ease-in-out;
+    animation: move 1.2s ease-in-out;
+    @media screen and (min-width: 428px){
+        display: none;
+   }
 }
 nav a:hover{
     @media screen and (max-width: 885px){
