@@ -104,17 +104,9 @@ section2{
     border-top-width: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
-    animation: 1.2s move ease-in-out;
+    animation: 1.2s moveright ease-in-out;
 }
-@keyframes move {
-    0% {
-        transform: translateX(-1900px);
-	}
 
-	100% {
-        transform: translateX(0px);
-	}
-  } 
 p{
     display: flex;
     align-items: center;
@@ -198,7 +190,7 @@ nav a:hover{
     max-width: 200px;
 }
 .udemy,.mochila, .facul{
-    animation:1.2s move ease-in-out;
+    animation:1.2s moveright ease-in-out;
 }
 .ingles, .pc2{
     animation:1.2s moveright ease-in-out;
