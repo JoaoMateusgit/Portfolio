@@ -1,0 +1,251 @@
+/* ===========================================================================================================================================================
+                                                                       Mobile
+==============================================================================================================================================================*/
+@media (max-width: 480px) {
+  body {
+    overflow: visible;
+  }
+
+  .titulo-padrao {
+    font-size: 18px;
+  }
+
+  .texto-padrao {
+    font-size: 12px;
+  }
+
+  .botoeslink {
+    display: none;
+  }
+
+  .botoesdiv {
+    justify-content: space-around;
+  }
+
+  .section-portfolio {
+    margin-top: 0;
+    min-width: 70%;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .section-portfolio img {
+    border-radius: 5px;
+    width: 121px;
+    height: 80px;
+  }
+
+  #conteudo .section-portfolio,
+  main#conteudo .section-portfolio {
+    padding: 0;
+    margin: 0;
+  }
+
+  .div-portfolio {
+    margin-top: 30px;
+  }
+
+  .div-portfolio h1 {
+    font-size: 15px;
+    font-weight: 900;
+  }
+
+  .section-portfolio p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 10px;
+  }
+
+  .img-container-reflexo {
+    border-radius: 5px;
+  }
+
+  .section-contato {
+    padding: 25px 20px;
+  }
+
+  .quick-contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .quick-contact p {
+    font-size: 1rem;
+  }
+
+  .form-sobre-img button {
+    width: 100%;
+  }
+
+  .nomeElogo {
+    display: none;
+  }
+
+  .carousel img,
+  .CarrouselSlide {
+    width: 60px;
+    overflow-x: auto;
+  }
+
+  .CarrouselSlide {
+    width: 300px;
+  }
+
+  .carousel-formacao,
+  .carousel-container-formacao {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .conteudoformacao {
+    width: 77%;
+  }
+
+  .img-formacao {
+    width: 100px;
+  }
+}
+
+/* Tablet (paisagem e retrato) */
+@media (min-width: 479px) and (max-width: 1200px) {
+  .section-portfolio {
+    margin-top: 0;
+    min-width: 70%;
+    height: 100vh;
+    justify-content: flex-start;
+  }
+
+  .section-portfolio img {
+    border-radius: 5px;
+    max-width: 290px;
+    max-height: 150px;
+    width: 250px;
+    height: 120px;
+  }
+
+  .img-container-reflexo {
+    border-radius: 10px;
+  }
+
+  #conteudo .section-portfolio {
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: 429px) {
+  #modo-escuro-toggle-fixo {
+    display: none;
+  }
+}
+
+/* ===========================================================================================================================================================
+                                                     Tablet / Ajustes gerais intermediários
+=========================================================================================================================================================== */
+@media (max-width: 767px) {
+  .NavLinkTop {
+    width: 100%;
+  }
+
+  .imgSkill {
+    width: 40px;
+  }
+
+  .conteudoformacao {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 819px) {
+  .caraImg {
+    display: none;
+  }
+}
+
+@media (min-width: 819px) {
+  .HomeApresentacaoPerfil {
+    animation: 2s move ease-in-out;
+  }
+}
+
+@media (max-width: 885px) {
+  .nav {
+    border-radius: 10px;
+    padding: 10px;
+    width: 95%;
+    min-height: 40px;
+  }
+
+  .BotoesNav,
+  .BotoesNav.ativo,
+  .BotoesNav:hover {
+    border-radius: 5px;
+  }
+
+  .BotoesNav {
+    padding: 3px;
+    transition: 0.2s ease-in-out;
+  }
+
+  main#conteudo {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 1115px) {
+  .nav {
+    border-radius: 10px;
+    padding: 10px;
+    width: 95%;
+    min-height: 40px;
+  }
+
+  .conteudoformacao {
+    width: 77%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: 0.2s ease-in-out;
+  }
+
+  .CarrouselSlide-formacao,
+  .CarrouselSlide-formacao:nth-of-type(1) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .conteudoformacao:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .carousel-container-formacao,
+  .carousel-formacao {
+    width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formacaoSection {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .carousel-btn-formacao,
+  .Centralizar-P {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {}

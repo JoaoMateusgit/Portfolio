@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/ModoEscuro.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/responsividade.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/druk-wide-bold?styles=157481" rel="stylesheet">
+
+    <title>portfólio João P.</title>
+</head>
+
+<body>
+    <div id="cursor-glow-container"></div>
+    <nav>
+        <div class="nomeElogo">
+            <button id="modo-escuro-toggle">
+                <img id="icone-tema" src="/images/lua.png" width="24" height="24px" alt="Modo escuro">
+            </button>
+            <div class="separa-nomeElogo">
+                <img id="icone-dev" src="/images/iconDev-Black.png" width="40 px" height="40px" alt="iconeDev">
+                <a class="linklogo" href="https://joaomateusgit.github.io/Portfolio/index.html"
+                    style="color: rgb(0, 0, 0)">
+                    <h1 class="titulo-padrao margem-esquerda" id="typing-text-normal-size"></h1>
+                </a>
+            </div>
+        </div>
+        <div class="NavLinkTop">
+            <a class="BotoesNav texto-padrao" href="#" onclick="carregarPagina('menu.html')">Home</a>
+            <a class="BotoesNav texto-padrao" href="#" onclick="carregarPagina('sobreMim.html')">Sobre mim</a>
+            <a class="BotoesNav texto-padrao" href="#" onclick="carregarPagina('formacao.html')">Formação</a>
+            <a class="BotoesNav texto-padrao" href="#" onclick="carregarPagina('portfolio.html')">Portfólio</a>
+            <a class="BotoesNav texto-padrao" href="#" onclick="carregarPagina('contato.html')">Contatos</a>
+
+            <!--https://joaomateusgit.github.io/Portfolio/sobreMim.html -->
+        </div>
+    </nav>
+    <!-- ✅ CONTEÚDO DINÂMICO -->
+    <main id="conteudo">
+        <!-- Aqui será carregado o conteúdo de cada página -->
+    </main>
+
+    <button id="modo-escuro-toggle-fixo" title="Alternar modo escuro (fixo)">
+        <img id="icone-tema-fixo" src="/images/lua.png" width="24" height="24px" alt="Modo escuro">
+    </button>
+
+    <script src="/JS/navegacao.js"></script>
+    <script src="/JS/cursorPersonalizado.js"></script>
+
+    <script src="/JS/modoEscuro.js"></script>
+
+
+    <script>
+        const frases = [
+            "João Mateus Perachi"
+        ];
+
+        const elemento = document.getElementById("typing-text-normal-size");
+        let fraseIndex = 0;
+        let letraIndex = 0;
+        let apagando = false;
+
+        function digitarLoop() {
+            const fraseAtual = frases[fraseIndex];
+
+            if (!apagando) {
+                elemento.innerHTML = fraseAtual.substring(0, letraIndex + 1);
+                letraIndex++;
+                if (letraIndex === fraseAtual.length) {
+                    apagando = true;
+                    setTimeout(digitarLoop, 1500); // espera antes de apagar
+                    return;
+                }
+            } else {
+                elemento.innerHTML = fraseAtual.substring(0, letraIndex - 1);
+                letraIndex--;
+                if (letraIndex === 0) {
+                    apagando = false;
+                    fraseIndex = (fraseIndex + 1) % frases.length;
+                }
+            }
+
+            setTimeout(digitarLoop, apagando ? 100 : 80); // velocidade ao digitar/apagar
+        }
+
+        digitarLoop();
+    </script>
+
+</body>
+
+</html>

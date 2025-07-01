@@ -1,0 +1,65 @@
+<section class="SectionMenu">
+
+  <div class="HomeApresentacaoPerfil">
+    <div id="tsparticles"></div>
+    <b><span id="typing-text"></span></b><br>
+    <p class="titulo-padrao--no-aling">Bem vindo ao meu portfólio web, Me chamo João Mateus Perachi
+      e através deste site vou te mostrar um pouco do meu trabalho como Desenvolvedor Full-stack.</p>
+    <br>
+    <div class="botoesdiv">
+      <a href="https://joaomateusgit.github.io/Portfolio/sobreMim.html"><button class="BotaoAcessar"
+          style="font-size: 15px;">Vamos lá!</button> </a>
+      <div class="botoeslink">
+        <a class="Contatos" href="https://github.com/JoaoMateusgit"><img id="icone-Git"
+            src="/images/iconGitHub-black.png" width="35px"></a>
+        <a class="Contatos" href="https://www.linkedin.com/in/joaomateusperachi"><img id="icone-Linkedin"
+            src="/images/iconLinkedin-Black.png" width="35px"></a>
+        <a class="Contatos" href="https://wa.me/+5551994646525"><img id="icone-Whats"
+            src="/images/iconsWhatsapp-black.png" width="35px"></a>
+      </div>
+    </div>
+  </div>
+  <img class="caraImg" src="/images/freepik__adjust__17171.png" width="500px">
+</section>
+
+<script>
+  function iniciarDigitarLoop(elementoId, frases) {
+    const elemento = document.getElementById(elementoId);
+    let fraseIndex = 0;
+    let letraIndex = 0;
+    let apagando = false;
+
+    function loop() {
+      const fraseAtual = frases[fraseIndex];
+
+      if (!apagando) {
+        elemento.innerHTML = fraseAtual.substring(0, letraIndex + 1);
+        letraIndex++;
+        if (letraIndex === fraseAtual.length) {
+          apagando = true;
+          setTimeout(loop, 1500);
+          return;
+        }
+      } else {
+        letraIndex--;
+        elemento.innerHTML = fraseAtual.substring(0, letraIndex);
+        if (letraIndex === 0) {
+          apagando = false;
+          fraseIndex = (fraseIndex + 1) % frases.length;
+        }
+      }
+
+      setTimeout(loop, apagando ? 100 : 80);
+    }
+
+    loop(); // inicia o loop
+  }
+
+  // Agora você pode chamar quantas vezes quiser com IDs diferentes:
+  iniciarDigitarLoop("typing-text", [
+    "Hello, world!", "Olá, mundo!", "¡Hola, mundo!"
+  ]);
+
+</script>
+
+

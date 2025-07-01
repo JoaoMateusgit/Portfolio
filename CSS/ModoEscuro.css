@@ -1,0 +1,311 @@
+/* ===========================================================================================================================================================
+Padroes
+=========================================================================================================================================================== */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo Escuro */
+body.modo-escuro {
+    background: #020024;
+    background: linear-gradient(44deg, rgba(2, 0, 36, 1) 0%, rgba(26, 26, 107, 1) 50%, rgba(166, 34, 168, 1) 100%);
+    color: #ffffff;
+
+}
+
+body.modo-escuro .BotoesNav.ativo {
+    color: #db97ff;
+    border-color: #db97ff;
+}
+
+body:not(.modo-escuro) .cursor-bolinha {
+    background-color: rgba(93, 87, 87, 0.8);
+    border-color: #6d6c6c;
+}
+
+body.modo-escuro .cursor-bolinha {
+    background-color: white;
+}
+
+body.modo-escuro .cursor-bolinha {
+    background-color: rgb(200, 200, 200);
+}
+
+.modo-escuro .titulo-padrao {
+    color: white;
+}
+
+#modo-escuro-toggle-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.modo-escuro .cursor-trail {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.7));
+    mix-blend-mode: screen;
+    transition: background 0.3s ease;
+}
+
+
+#modo-escuro-toggle {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.modo-escuro #modo-escuro-toggle-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #54545449;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease-in-out;
+}
+
+.modo-escuro #modo-escuro-toggle {
+    color: white;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.352);
+    transition: 0.5s ease-in-out;
+}
+
+/* ===========================================================================================================================================================
+                                                                  Nav Fixa
+=========================================================================================================================================================== */
+
+.modo-escuro nav {
+    background-color: #36363678;
+    color: white;
+}
+
+.modo-escuro .BotoesNav {
+    background-color: transparent;
+    color: white;
+}
+
+.modo-escuro .BotoesNav:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    color: rgb(250, 250, 250);
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+button#modo-escuro-toggle {
+    background: rgba(20, 20, 20, 0.301);
+    border: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* ===========================================================================================================================================================
+                                                                     menu.html
+=========================================================================================================================================================== */
+
+.modo-escuro .BotaoAcessar {
+    background-color: transparent;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.612);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.modo-escuro .BotaoAcessar::before {
+    transition: ease-in-out 0.2s;
+    background-color: white;
+    color: #ffffff;
+}
+
+.modo-escuro .BotaoAcessar:hover {
+    color: #000000;
+}
+
+.modo-escuro .caraImg {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+
+@media (prefers-color-scheme: light) {
+    #icone-Git {
+        content: attr(data-light);
+    }
+}
+
+.modo-escuro .HomeApresentacaoPerfil {
+    border: none;
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.6px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+    margin: 15px;
+    max-width: 675px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: clamp(1em, 1em + 1vw, 1.4em);
+    min-width: 270px;
+    min-height: 20px;
+    background: none;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.118);
+    backdrop-filter: blur(5.9px);
+}
+
+.modo-escuro .caraImg {
+    border: none;
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* ===========================================================================================================================================================
+                                                                  formacao.html
+=========================================================================================================================================================== */
+
+.modo-escuro .conteudoformacao {
+    /* From https://css.glass */
+    background: transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.118);
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.modo-escuro .img-formacao {
+    /* From https://css.glass */
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5.6px);
+    -webkit-backdrop-filter: blur(5.6px);
+}
+
+.modo-escuro .carousel-btn-formacao {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.modo-escuro .carousel-btn {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+
+/* ===========================================================================================================================================================
+                                                                  sobreMim.html
+=========================================================================================================================================================== */
+
+.modo-escuro .p-sobreMim {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background-color: transparent;
+}
+
+.modo-escuro .Centralizar-P {
+    color: #ffffff6c;
+}
+
+/* ===========================================================================================================================================================
+                                                                  portfolio.html
+=========================================================================================================================================================== */
+
+
+.modo-escuro .div-portfolio h1 {
+    font-weight: 900;
+    color: transparent;
+    font-family: 'Druk Wide Bold', sans-serif;
+    transform: perspective(500px) rotateY(20deg);
+    /* valor positivo gira para a esquerda */
+    transform-origin: left center;
+    /* o ponto fixo é o lado esquerdo */
+    animation: entraTexto 1s;
+    transition: transform 0.2s ease-in-out, color 0.5s, opacity 0.5s;
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+
+.modo-escuro .div-portfolio:hover h1 {
+    transform: perspective(500px) rotateY(15deg);
+    color: white;
+    transition: transform 0.2s ease-in-out, color 0.5s, opacity 0.5s;
+    -webkit-text-stroke: 1.5px rgb(255, 255, 255);
+}
+
+/* ===========================================================================================================================================================
+                                                                  contato.html
+=========================================================================================================================================================== */
+
+.modo-escuro .form-sobre-img input,
+.modo-escuro .form-sobre-img textarea {
+    width: 100%;
+    padding: 6px 8px;
+    /* Menor altura */
+    margin-top: 3px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    resize: vertical;
+    transition: border 0.3s ease;
+}
+
+.modo-escuro .quick-contact h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dark-mode img.icone {
+  filter: brightness(0) invert(1);
+}
+
+.modo-escuro .form-sobre-img input,
+.form-sobre-img textarea {
+    color: rgb(255, 255, 255);
+}
